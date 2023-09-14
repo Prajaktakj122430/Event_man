@@ -1,0 +1,56 @@
+.field {
+  /* display: inline-block;
+  width: 150%;
+  padding: 0.875rem 1.125rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #555a61;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c5ccd6;
+  appearance: none;
+  border-radius: 0.35rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.1s ease-in-out;
+  margin-left: -100%;
+  margin-right: 20%; */
+
+  display: inline-block;
+  width: 150%;
+  padding: 0.875rem 1.125rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #555a61;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c5ccd6;
+  appearance: none;
+  border-radius: 0.35rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.1s ease-in-out;
+  margin-left: -25%;
+  margin-right: 10%;
+}
+.cascading-right {
+  margin-right: -50px;
+}
+
+@media (max-width: 991.98px) {
+  .cascading-right {
+    margin-right: 0;
+  }
+}
+.icon {
+  position: absolute;
+
+  margin-left: 80px;
+  margin-top: -35px;
+}
+
+.form-control {
+}
+@media (max-width: 991.98px) {
+  .field {
+    margin-right: 0;
+  }
+}
