@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import './Signup.css'
@@ -10,7 +10,6 @@ import { Icon } from 'react-icons-kit'
 import { logIn } from 'react-icons-kit/feather/logIn'
 
 const Signup = () => {
-  // const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [type, setType] = useState('password')
@@ -34,7 +33,7 @@ const Signup = () => {
         if (res.data.Status === 'Success') {
           const user = [email, password]
           localStorage.setItem('user', JSON.stringify(user))
-          // localStorage.setItem('pass', JSON.stringify(password))
+
           navigate('/dashboard')
           localStorage.setItem('login', true)
         } else {
@@ -44,7 +43,7 @@ const Signup = () => {
       })
 
       .catch((err) => console.log(err))
-    // navigate('/dashboard')
+    navigate('/dashboard')
   }
   return (
     <div>
@@ -119,13 +118,11 @@ const Signup = () => {
                           <button
                             className='btn btn-primary btn-block fa-lg gradient-custom-2 mb-3'
                             type='submit'
+                            disabled={email === '' && password === ''}
                           >
                             Log in
                             <Icon icon={logIn} />
                           </button>
-                          <a className='text-muted' href='#!'>
-                            {/* Forgot password? */}
-                          </a>
                         </div>
 
                         <div className='d-flex align-items-center justify-content-center pb-4'>
@@ -157,12 +154,6 @@ const Signup = () => {
                                 className='d-block w-100'
                                 alt='Sunset Over the City'
                               />
-                              {/* <div className='carousel-caption d-none d-md-block'>
-                                
-                                <p>
-                                  <b>Life is an event. Make it memorable.</b>
-                                </p>
-                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -181,4 +172,5 @@ const Signup = () => {
     </div>
   )
 }
+
 export default Signup

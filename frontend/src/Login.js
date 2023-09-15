@@ -158,6 +158,9 @@ const Login = () => {
                           <label className='form-label' for='form2Example22'>
                             <strong>Password:</strong>
                           </label>
+                          <span onClick={handleToggle}>
+                            <Icon icon={icon} />
+                          </span>
 
                           <input
                             type={type}
@@ -169,9 +172,9 @@ const Login = () => {
                           />
                           <abbr>Password must be at least 8 characters.</abbr>
 
-                          <span onClick={handleToggle}>
+                          {/* <span onClick={handleToggle}>
                             <Icon icon={icon} />
-                          </span>
+                          </span> */}
                         </div>
 
                         <div className='text-center pt-1 mb-5 pb-1'>

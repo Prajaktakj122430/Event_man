@@ -67,7 +67,7 @@ const Dashboard = () => {
             />
 
             <h6 class=' main-title'>
-              <strong>The Lotus</strong>{' '}
+              <strong style={{ fontSize: '40px' }}>The Lotus</strong>{' '}
             </h6>
             <div class='navbar-nav' style={{ marginLeft: 60 }}></div>
           </div>
@@ -79,12 +79,12 @@ const Dashboard = () => {
                 alt=''
                 height={40}
                 width={40}
+                marginRight={'100%'}
               />
             </Link>
-
-            <h3>{name}</h3>
-
-            <button className='btn btn-primary ms-auto ' onClick={handleLogout}>
+            <h3>&nbsp;&nbsp;{name}</h3>
+            &nbsp; &nbsp; &nbsp;
+            <button className='btn btn-primary ms-auto' onClick={handleLogout}>
               logout
             </button>
           </div>

@@ -70,9 +70,7 @@ const Update = () => {
         backgroundSize: 'cover',
       }}
     >
-      {/* <!-- Section: Design Block --> */}
       <section className='text-center text-lg-start'>
-        {/* <!-- Jumbotron --> */}
         <div className='container py-4'>
           <div className='row g-0 align-items-center'>
             <div className='col-lg-6 mb-5 mb-lg-0' style={{ marginTop: '5%' }}>

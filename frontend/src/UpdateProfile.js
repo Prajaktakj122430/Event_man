@@ -43,7 +43,7 @@ const UpdateProfile = () => {
           setPassword()
         })
         .catch((err) => {
-          console.log('Daya Gadbad -->', err)
+          console.log(err)
         })
     }
     fetchData()
@@ -68,7 +68,6 @@ const UpdateProfile = () => {
         })
 
         .catch((error) => {
-          console.log('Daya Kuchh To Gadbad Hai')
           console.log('Error------>', error)
         })
       navigate('/Dashboard')
@@ -86,7 +85,7 @@ const UpdateProfile = () => {
             alt=''
           />
         </div>
-        <div className='text-center mt-4 name'>{name}</div>
+        <div className='text-center mt-4 name'> Hello {name}</div>
 
         <form class='p-3 mt-3' onSubmit={formupdate}>
           <label htmlFor='name'>Name:</label>
@@ -116,31 +115,29 @@ const UpdateProfile = () => {
           </div>
           <label htmlFor='name'>Password:</label>
           <span
-            classNameName='toggle'
+            className='toggle'
             onClick={handleToggle}
             style={{ color: 'black' }}
           >
-            <Icon icon={icon} classNameName='toggle' />
+            <Icon icon={icon} className='toggle' />
           </span>
-          <div class='form-field d-flex align-items-center'>
-            <br />
-            <div classNameName='form-field d-flex align-items-center'>
-              <input
-                type={type}
-                name='password'
-                placeholder='Enter password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
+          <br />
+          <div className='form-field d-flex align-items-center'>
+            <input
+              type={type}
+              name='password'
+              placeholder='Enter password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
-          <button classNameName='btn btn-3'>
+          <button className='btn btn-3'>
             <strong style={{ fontSize: '20px' }}>Update</strong>
           </button>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <Link
             to='/dashboard'
-            classNameName='btn btn-3'
+            className='btn btn-3'
             style={{ fontSize: '20px' }}
           >
             Back

@@ -8,12 +8,6 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-.logout {
-  /* margin-left: 180%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; */
-}
 
 .nav-item {
   color: #88bda4;
@@ -39,11 +33,62 @@ table {
     margin-bottom: 5px;
   }
 }
-.profile {
-  /* display: flex; */
+/* .profile {
+
   position: absolute;
-  /* margin-top: 0px; */
+
   margin-left: -3%;
-  /* margin-top: 30px; */
+ 
   align-items: center;
+} */
+
+/* Default styles for the navigation bar */
+.navbar {
+  background-color: #cbf3e4;
+}
+
+/* Styles for the logo and title */
+.img {
+  height: 60px;
+  width: 90px;
+}
+
+.main-title {
+  font-size: 1.5rem;
+}
+
+/* Styles for the profile image and name */
+.profile {
+  height: 40px;
+  width: 40px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the logout button */
+.btn-primary {
+  margin-left: auto;
+}
+
+/* Media query for smaller screens (e.g., tablets and mobile) */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.2rem;
+  }
+
+  .profile {
+    height: 30px;
+    width: 30px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 0.8rem;
+  }
 }
